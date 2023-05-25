@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="topnav">
+      <a class="active" href="#home">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#hobbies">Hobbies</a>
+      <a href="#about">Contact</a>
+    </div>
+
+    <!-- Title Page -->
+    <section class="dark" style="z-index: -1" id="home">
+      <img src="imgs/profile_pic.jpg" alt="Profile Pic" class="profile-pic" />
+
+      <h1 class="main-title">Leonardo Carneiro Lindemberg</h1>
+      <p>Welcome to my persona website!!</p>
+      <p>
+        Here I have some of my projects that I've done though my life, and also
+        some of my passions and hobbies
+      </p>
+      <p>Proud Michigan Wolverine GO BLUE!!</p>
+    </section>
+    <div class="spacer layer4" id="projects"></div>
+
+    <!-- Project Section -->
+    <section class="dark-2" style="z-index: -1">
+      <h1 style="position: absolute; top: 0px; font-size: 300%">My Projects</h1>
+
+      <div class="p-row">
+        <div class="p-col">
+          <div class="p-img-container">
+            <img src="imgs/chess-image.png" alt="Chess Image"/>
+          </div>
+
+          <h1 style="text-align: center">Chess Engine and AI</h1>
+          <h3>Python and Pygame</h3>
+          <p>Used Python to program a chess GUI and a chess engine. All piece 
+            movements and restrictions are implemented, together with niche 
+            mechanics (Castling and En Passant). Lastly, a rudimentary AI is used.
+            </p>
+        </div>
+
+        <div class="p-col">
+          <div class="p-img-container">
+            <img src="imgs/maze-img.jpg" alt="Chess Image"/>
+          </div>
+
+          <h1 style="text-align: center">BFS and DFS Maze Search</h1>
+          <h3>C++</h3>
+          <p>Using stacks and queues to navigate through a 3D coordinate maze and finds a path 
+            from beginning to end. 
+            Backtracks through the path and draws out the movement direction at each coordinate 
+            in the 3D maze
+            </p>
+        </div>
+
+        <div class="p-col">
+          <div class="p-img-container">
+            <img src="imgs/MST.png" alt="Chess Image"/>
+          </div>
+
+          <h1 style="text-align: center">MST and TSP</h1>
+          <h3>Languages: C++</h3>
+          <p>Given a list of coordinates, creates an MST using Prim's algorithm while adhering to
+            some restrictions.
+            Creates an optimal solution to the TSP by using the nearest insert heuristic, then using branch pruning
+            to optimize the solution.
+            </p>
+        </div>
+      </div>
+
+      <div class="p-row">
+        <div class="p-col">
+          <h1>Chess Engine and AI</h1>
+          <h3>Python</h3>
+          <p>This was a</p>
+        </div>
+
+        <div class="p-col">
+          <h1>Chess Engine and AI</h1>
+          <h3>Languages: Python</h3>
+          <p>This was a</p>
+        </div>
+      </div>
+    </section>
+    
+    <div class="spacer layer4 flip" id="hobbies" style="z-index: -1"></div>
+
+    <!-- About Me -->
+    <section class="dark" style="z-index: -1">
+      <h1 style="position: absolute; top: 0px; font-size: 300%">About Me</h1>
+      <p>
+        Ab non aut, at quam, adipisci doloremque quasi quos architecto quae
+        recusandae beatae aliquam ex ea! Nulla, cumque fugiat at, voluptas alias
+        repudiandae a aut sint magnam repellat, voluptatibus pariatur!
+      </p>
+    </section>
+    <div class="spacer layer2"></div>
+
+    <!-- Spotify Link -->
+    <section class="green" style="z-index: -1;">
+      <h1 style="font-size: 300%">Music</h1>
+      <p>
+        Cum, a possimus? Optio dolore itaque accusantium, earum unde eveniet
+        numquam aliquam dolorem commodi quod asperiores laborum odit cupiditate
+        recusandae, laudantium, pariatur similique omnis ipsum doloremque? Ab
+        neque quam veniam.
+      </p>
+    </section>
+
+    <div class="spacer layer1"></div>
+
+    <section>
+      <h1>Contacts</h1>
+      <p>
+        Voluptate expedita possimus totam est maxime, labore dolores provident
+        quidem aspernatur voluptates earum nobis eveniet quia saepe illo
+        numquam, corrupti esse ea, consequatur sit praesentium velit! Veniam ea
+        aperiam obcaecati.
+      </p>
+    </section>
+
+    <div class="spacer layer3"></div>
+
+    <section class="pink">
+      <h1>What I am learning right now!</h1>
+      <p>
+        At the moment, I am learning how to work with vector graphics and SVG. I'm also trying to furhter my abilites 
+        with Javascript and some Frameworks.
+      </p>
+      <p>
+        Here is a moving blob that I created using JS and Vector Graphics:
+      </p>
+      <svg
+        id="visual"
+        viewBox="0 0 960 300"
+        width="960"
+        height="300"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        version="1.1"
+      >
+        <g transform="translate(471.66442946298673 149.6982646855456)">
+          <path
+            id="blob1"
+            d="M78.7 -70.4C103.7 -53.7 126.9 -26.9 122.6 -4.2C118.4 18.4 86.8 36.8 61.8 51.3C36.8 65.8 18.4 76.4 -7.5 83.9C-33.5 91.5 -66.9 95.9 -86.3 81.4C-105.6 66.9 -110.8 33.5 -102.9 7.9C-95 -17.7 -74 -35.4 -54.7 -52C-35.4 -68.7 -17.7 -84.3 4.6 -88.9C26.9 -93.5 53.7 -87.1 78.7 -70.4"
+            fill="#BB004B"
+          ></path>
+        </g>
+        <g
+          transform="translate(471.759196121082 145.34722011953002)"
+          style="visibility: hidden"
+        >
+          <path
+            id="blob2"
+            d="M66.5 -61.8C91.5 -41.5 120.7 -20.7 124.4 3.7C128 28 106.1 56.1 81.1 79.6C56.1 103.1 28 122 5.2 116.9C-17.7 111.7 -35.4 82.4 -55.9 58.9C-76.4 35.4 -99.7 17.7 -106.3 -6.6C-112.9 -30.9 -102.8 -61.8 -82.3 -82.1C-61.8 -102.4 -30.9 -112.2 -5.1 -107.1C20.7 -102.1 41.5 -82.2 66.5 -61.8"
+            fill="#BB004B"
+          ></path>
+        </g>
+      </svg>
+      <script>
+        const tween = KUTE.fromTo(
+          "#blob1",
+          { path: "#blob1" },
+          { path: "#blob2" },
+          { repeat: 999, duration: 3000, yoyo: true }
+        ).start();
+      </script>
+    </section>
+
+    <div class="spacer layer3 flip"></div>
+    <section>
+      <h1>Secret Section </h1>
+      <p id="buttons-container"></p>
+      <button id="reset-button">Reset</button>
+      <div id="pass-content"></div>
+
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
