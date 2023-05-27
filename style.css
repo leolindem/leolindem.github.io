@@ -233,3 +233,20 @@ body {
     width: 130%;
     color: white;
   }
+
+  .about-me-p{
+    font-size: 18px;
+    color : white;
+  }
+
+  .about-me-title{
+    position: absolute ; 
+    top: 20px;
+    font-size: 200%;
+    color: #fff0db;
+  }
+
+  .about-me-pic {
+    width: 200px;
+    height: 250px;
+  }
