@@ -13,6 +13,11 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/b71009a297.js"
+      crossorigin="anonymous"
+    ></script>
+
     <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
 
     <title>Document</title>
@@ -22,15 +27,13 @@
     <div class="topnav">
       <a class="active" href="#home">Home</a>
       <a href="#projects">Projects</a>
-      <a href="#hobbies">Hobbies</a>
+      <a href="#About-Me">About Me</a>
       <a href="#spotify">Spotify</a>
-      <a href="#about">Contact</a>
-
+      <a href="#learning">Currently Learning</a>
     </div>
 
-
     <!-- Title Page -->
-    <section class="dark" style="z-index: -1" id="home">
+    <section class="dark" id="home">
       <img src="imgs/profile_pic.JPG" alt="Profile Pic" class="profile-pic" />
 
       <h1 class="main-title">Leonardo Carneiro Lindemberg</h1>
@@ -39,7 +42,18 @@
         Here I have some of my projects that I've done though my life, and also
         some of my passions and hobbies
       </p>
-      <p>Proud Michigan Wolverine GO BLUE!!</p>
+      <p
+        style="
+          text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        "
+      >
+        <img src="imgs/block-m.png" style="width: 2%" />
+        &nbsp; Proud Michigan Wolverine. GO BLUE!! &nbsp;
+        <img src="imgs/block-m.png" style="width: 2%" />
+      </p>
     </section>
     <div class="spacer layer4" id="projects"></div>
 
@@ -50,43 +64,46 @@
       <div class="p-row">
         <div class="p-col">
           <div class="p-img-container">
-            <img src="imgs/chess-image.png" alt="Chess Image"/>
+            <img src="imgs/chess-image.png" alt="Chess Image" />
           </div>
 
           <h1 style="text-align: center">Chess Engine and AI</h1>
           <h3>Python and Pygame</h3>
-          <p>Used Python to program a chess GUI and a chess engine. All piece 
-            movements and restrictions are implemented, together with niche 
-            mechanics (Castling and En Passant). Lastly, a rudimentary AI is used.
-            </p>
+          <p>
+            Used Python to program a chess GUI and a chess engine. All piece
+            movements and restrictions are implemented, together with niche
+            mechanics (Castling and En Passant). Lastly, a rudimentary AI is
+            used.
+          </p>
         </div>
 
         <div class="p-col">
           <div class="p-img-container">
-            <img src="imgs/maze-img.jpg" alt="Chess Image"/>
+            <img src="imgs/maze-img.jpg" alt="Chess Image" />
           </div>
 
           <h1 style="text-align: center">BFS and DFS Maze Search</h1>
           <h3>C++</h3>
-          <p>Using stacks and queues to navigate through a 3D coordinate maze and finds a path 
-            from beginning to end. 
-            Backtracks through the path and draws out the movement direction at each coordinate 
-            in the 3D maze
-            </p>
+          <p>
+            Using stacks and queues to navigate through a 3D coordinate maze and
+            finds a path from beginning to end. Backtracks through the path and
+            draws out the movement direction at each coordinate in the 3D maze
+          </p>
         </div>
 
         <div class="p-col">
           <div class="p-img-container">
-            <img src="imgs/MST.png" alt="Chess Image"/>
+            <img src="imgs/MST.png" alt="Chess Image" />
           </div>
 
           <h1 style="text-align: center">MST and TSP</h1>
           <h3>Languages: C++</h3>
-          <p>Given a list of coordinates, creates an MST using Prim's algorithm while adhering to
-            some restrictions.
-            Creates an optimal solution to the TSP by using the nearest insert heuristic, then using branch pruning
-            to optimize the solution.
-            </p>
+          <p>
+            Given a list of coordinates, creates an MST using Prim's algorithm
+            while adhering to some restrictions. Creates an optimal solution to
+            the TSP by using the nearest insert heuristic, then using branch
+            pruning to optimize the solution.
+          </p>
         </div>
       </div>
 
@@ -104,69 +121,90 @@
         </div>
       </div>
     </section>
-    
 
+    <div class="spacer layer5"></div>
     <!-- About Me -->
-    <section class="dark" style="z-index: -1">
-      <h1 class="about-me-title">About Me</h1>
-      <img src="imgs/about-me-pic.jpeg" alt="aboutme-pic" class="about-me-pic">
-      <p class="about-me-p"> 
-        My thirst for adventure has led me across the globe, 
-        immersing myself in the vibrant cultures of Brazil, Dominican Republic, Ecuador, Ghana, and the United States. 
-        Traveling has become an integral part of my life, fueling my curiosity and inspiring me to explore new places at 
-        every opportunity.
-      </p>
-      <p class="about-me-p">
-        I keep a travel notebook where I jot down all the restaurants I've stumbled upon during my travels. 
-        It's like a treasure trove of the best food spots you can imagine. 
-        From devouring feijoada in Brazil to digging into mouthwatering mofongo in the Dominican Republic, 
-        I'm all about embracing different flavors and culinary experiences
-      </p>
-      <p class="about-me-p">
-        I love losing myself in captivating films. After each flick, I can't help but scribble down quick reviews,
-         sharing my thoughts on the story, performances, and all that good stuff. If you're into movies too, 
-         you've gotta check out my letterbox account—it's where I spill the beans on all my favorite films 
-         and rant about the not-so-great ones.
-      </p>
+    <section class="dark" style="z-index: 0" id="About-Me">
+      <div class="about-me-container">
+        <img
+          src="imgs/about-me-pic.jpeg"
+          alt="aboutme-pic"
+          class="about-me-pic"
+        />
+        <div class="about-me-content">
+          <h1 class="about-me-title">About Me</h1>
+          <p class="about-me-p">
+            My thirst for adventure has led me across the globe, immersing
+            myself in the vibrant cultures of Brazil, Dominican Republic,
+            Ecuador, Ghana, and the United States. Traveling has become an
+            integral part of my life, fueling my curiosity and inspiring me to
+            explore new places at every opportunity.
+          </p>
+          <p class="about-me-p">
+            I keep a travel notebook where I jot down all the restaurants I've
+            stumbled upon during my travels. It's like a treasure trove of the
+            best food spots you can imagine. From devouring feijoada in Brazil
+            to digging into mouthwatering mofongo in the Dominican Republic, I'm
+            all about embracing different flavors and culinary experiences
+          </p>
+          <p class="about-me-p">
+            I love losing myself in captivating films. After each flick, I can't
+            help but scribble down quick reviews, sharing my thoughts on the
+            story, performances, and all that good stuff. If you're into movies
+            too, you've gotta check out my letterbox account—it's where I spill
+            the beans on all my favorite films and rant about the not-so-great
+            ones.
+          </p>
+          <p class="about-me-p">
+            Finally, I enjoy taking on random but fun small projects. Recently I
+            soldered and built a small universal control, that allows me to turn
+            on or off almost any TV.
+          </p>
+          <h1 class="about-me-title">Contact Me!</h1>
 
-      <p class="about-me-p">
-        Finally, I enjoy taking on random but fun small projects. Recently I soldered and built a small universal control, that allows me to turn on or off almost any TV.
-      </p>
+          <a href="mailto:leolind@umich.edu"> 
+            <i class="fa-regular fa-envelope fa-3x" id="icons"></i>
+          </a>
+
+          <a href="https://www.instagram.com/leolindemberg/">
+            <i class="fa-brands fa-instagram fa-3x" id="icons"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/leonardo-carneiro-lindemberg-526bb2222/">
+            <i class="fa-brands fa-linkedin fa-3x" id="icons"></i>
+          </a>
+          <a href="https://github.com/leolindem">
+            <i class="fa-brands fa-square-github fa-3x" id="icons"></i>
+          </a>
+        </div>
+      </div>
     </section>
-    <div class="spacer layer2" id="spotify"></div>
+    <div class="spacer layer2"></div>
 
     <!-- Spotify Link -->
-    <section class="green" style="z-index: -1;">
-      <h1 style="position: absolute; top: 0px; font-size: 300%">Spotify</h1>
-      <p>
-        I am a huge fan of music. Here is a link to my Spotify profile, where you can find some of the music I have been
-        listening to recently.
+    <section class="green" style="z-index: -1" id="spotify">
+      <h1 style="position: absolute; top: 0px; font-size: 300%">Music</h1>
+      <p style="font-size: 130%">
+        I am a huge fan of music. Here is a some of my favorite albums of all
+        time!
       </p>
+      <div class="album-image-container">
+        <img src="imgs/macmiller.jpeg" alt="Spotify" />
+        <img src="imgs/madvillan.jpeg" alt="Spotify" />
+        <img src="imgs/pimp-but.jpeg" alt="Spotify" />
+      </div>
     </section>
-
-    <div class="spacer layer1"></div>
-
-    <section>
-      <h1>Contacts</h1>
-      <p>
-        Voluptate expedita possimus totam est maxime, labore dolores provident
-        quidem aspernatur voluptates earum nobis eveniet quia saepe illo
-        numquam, corrupti esse ea, consequatur sit praesentium velit! Veniam ea
-        aperiam obcaecati.
-      </p>
-    </section>
+    <div class="spacer layer6"></div>
 
     <div class="spacer layer3"></div>
 
-    <section class="pink">
+    <section class="pink" id="learning" style="z-index: -1">
       <h1>What I am learning right now!</h1>
       <p>
-        At the moment, I am learning how to work with vector graphics and SVG. I'm also trying to furhter my abilites 
-        with Javascript and some Frameworks.
+        At the moment, I am learning how to work with vector graphics and SVG.
+        I'm also trying to furhter my abilites with Javascript and some
+        Frameworks.
       </p>
-      <p>
-        Here is a moving blob that I created using JS and Vector Graphics:
-      </p>
+      <p>Here is a moving blob that I created using JS and Vector Graphics:</p>
       <svg
         id="visual"
         viewBox="0 0 960 300"
@@ -206,11 +244,10 @@
 
     <div class="spacer layer3 flip"></div>
     <section>
-      <h1>Secret Section </h1>
+      <h1>Secret Section</h1>
       <p id="buttons-container"></p>
       <button id="reset-button">Reset</button>
       <div id="pass-content"></div>
-
     </section>
 
     <script src="script.js"></script>

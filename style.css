@@ -146,6 +146,14 @@ body {
     background-image: url("imgs/waves1.svg");
   }
 
+  .layer5 {
+    background-image: url("imgs/layer5.svg");
+  }
+
+  .layer6 {
+    background-image: url("imgs/layer6.svg");
+  }  
+
   .flip {
     transform: rotate(180deg);
   }
@@ -155,8 +163,10 @@ body {
 .topnav {
     position: sticky;
     top: 0;
-    background-color: #333;
+    background-color: #252525;
     overflow: hidden;
+    z-index: 1000000;
+
   }
   
   /* Style the links inside the navigation bar */
@@ -165,7 +175,7 @@ body {
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 13px 25px;
     text-decoration: none;
     font-size: 17px;
     z-index: 1000000;
@@ -240,13 +250,63 @@ body {
   }
 
   .about-me-title{
-    position: absolute ; 
-    top: 20px;
     font-size: 200%;
     color: #fff0db;
   }
 
   .about-me-pic {
-    width: 200px;
-    height: 250px;
+    flex : 0 0 auto;
+    margin-right : 20px;
+    height: 550px;
   }
+
+  .about-me-container {
+    display: flex;
+    align-items: center;
+    width: 140%;
+  }
+
+  .about-me-content {
+    top: 0px;
+    position: relative;
+    flex: 1 1 auto;
+  }
+
+  .album-image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 10%;
+  }
+
+  .album-image-container img:nth-child(1){
+    width: 40%;
+    height: 40%;
+    padding-right: 4%;
+  }
+  .album-image-container img:nth-child(2){
+    width: 40%;
+    height: 40%;
+    padding-right: 4%;
+    padding-left : 4%;
+  }
+  .album-image-container img:nth-child(3){
+    width: 40%;
+    height: 40%;
+    padding-left: 4%;
+  }
+
+  a:visited {
+    color: white;
+  }
+
+  a {
+    color: white;
+  }
+
+  #icons {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
