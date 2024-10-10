@@ -8,7 +8,7 @@ export function Welcome() {
   const fullName = "Lindemberg";
   const [typedName, setTypedName] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
-  const speed = 100;
+  const speed = 200;
 
   useEffect(() => {
     if (currentIndex < fullName.length) {

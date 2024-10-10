@@ -7,7 +7,7 @@ export default function HomePage() {
   return (
     <>
       <Welcome />
-      <ColorSchemeToggle />
+      {/* <ColorSchemeToggle /> */}
       <Space h={100} />
       <ProjectGrid />
     </>

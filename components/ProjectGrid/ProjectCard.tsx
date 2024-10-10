@@ -5,9 +5,11 @@ import { Center, SimpleGrid, Card, Image, Group, Text, Badge, Button } from "@ma
 interface ProjectProps {
     title: string;
     imgSrc: string;
+    technologies : Array<string>;
+    description : string;
 }
 
-export function Project({ title, imgSrc  }: ProjectProps) {
+export function Project({ title, imgSrc, technologies, description  }: ProjectProps) {
     return (
         <Card w={300} shadow="sm" padding="lg" radius="md" withBorder>
             <Card.Section>
@@ -17,12 +19,12 @@ export function Project({ title, imgSrc  }: ProjectProps) {
                 <Text fw={500}>{title}</Text>
             </Group>
             <Group mb="md">
-                <Badge>Python</Badge>
-                <Badge>React</Badge>
-                <Badge>Hadoop</Badge>
+                {technologies.map((tech, index) => (
+                    <Badge key={index}>{tech}</Badge>
+                ))}
             </Group>
             <Text size="sm" c="dimmed">
-                Scalable Seach engine for small scale search indexes
+               {description}
             </Text>
         </Card>
     );
