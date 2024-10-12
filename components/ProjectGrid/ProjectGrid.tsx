@@ -1,7 +1,11 @@
+"use client";
+
 import { Center, SimpleGrid, Title, Badge, Button } from "@mantine/core";
 import { Project } from "./ProjectCard";
+import { useMediaQuery } from "@mantine/hooks";
 
 export function ProjectGrid() {
+  const isMobile = useMediaQuery("(max-width: 768px)");
   return (
     <>
       <Title ta="center" mb={80} size={70}>
@@ -9,7 +13,7 @@ export function ProjectGrid() {
       </Title>
 
       <Center>
-        <SimpleGrid cols={3} spacing={120} mb={50}>
+        <SimpleGrid cols={isMobile ? 1 : 3} spacing={120} mb={50}>
           <Project
             title="Scalable Seach Engine"
             imgSrc="/search_engine.jpg"
