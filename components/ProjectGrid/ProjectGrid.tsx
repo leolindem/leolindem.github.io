@@ -19,24 +19,28 @@ export function ProjectGrid() {
             imgSrc="/search_engine.jpg"
             technologies={["hadoop", "Python", "Flask", "MySql"]}
             description=" Scalable Seach engine for small scale search indexes"
+            githubSrc="https://github.com/leolindem/PW_RUSTCLT"
           />
           <Project
             title="Mentor Connection Website"
             imgSrc="/MentorMeets.jpg"
             technologies={["Next.js", "FireBase", "TypeScript"]}
             description="Website to connecting Michigan students to Career Mentors"
+            githubSrc="https://github.com/leolindem/PW_RUSTCLT"
           />
           <Project
             title="Database from scratch "
             imgSrc="database.jpg"
             technologies={["C++"]}
             description="Designed and created a full SQL database clone in C++"
+            githubSrc="https://github.com/leolindem/PW_RUSTCLT"
           />
           <Project
             title="Chess Engine"
             imgSrc="Chess_Engine.jpg"
             technologies={["Python"]}
             description="Playable chess engine with AI opponent mode"
+            githubSrc="https://github.com/leolindem/PW_RUSTCLT"
           />
           <Project
             title="Focus Chrome Extension"
@@ -44,12 +48,21 @@ export function ProjectGrid() {
             technologies={["JavaScript"]}
             description="Keeps a timer of how long you have spent on 'blacklisted' tabs and 
             warns you after some timer is done"
+            githubSrc="https://github.com/leolindem/PW_RUSTCLT"
           />
           <Project
             title="Spotify Danceability Web App"
             imgSrc="spotify.jpg"
             technologies={["Python", "React"]}
             description="Tells users how Danceable a song is on Spotify"
+            githubSrc="https://github.com/leolindem/PW_RUSTCLT"
+          />
+          <Project
+            title="Command Line Password Manager in Rust"
+            imgSrc="rust.jpg"
+            technologies={["Rust"]}
+            description="Simple Command Line Tool that keeps track of passwords for users. My first project in Rust!"
+            githubSrc="https://github.com/leolindem/PW_RUSTCLT"
           />
         </SimpleGrid>
       </Center>
