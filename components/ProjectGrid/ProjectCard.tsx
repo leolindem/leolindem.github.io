@@ -7,7 +7,7 @@ interface ProjectProps {
     imgSrc: string;
     technologies : Array<string>;
     description : string;
-    githubSrc : string;
+    githubSrc? : string;
 }
 
 export function Project({ title, imgSrc, technologies, description, githubSrc  }: ProjectProps) {
@@ -24,11 +24,13 @@ export function Project({ title, imgSrc, technologies, description, githubSrc  }
             <Badge key={index}>{tech}</Badge>
           ))}
         </Group>
-        <a href={githubSrc} target="_blank">
-          <ActionIcon variant="filled" size="md" radius="xl" color="white">
-            <Image src="github-mark.png"></Image>
-          </ActionIcon>
-        </a>
+        {githubSrc && (
+          <a href={githubSrc} target="_blank">
+            <ActionIcon variant="filled" size="md" radius="xl" color="white">
+              <Image src="github-mark.png"></Image>
+            </ActionIcon>
+          </a>
+        )}
         <Text size="sm" c="dimmed" mt="md">
           {description}
         </Text>
