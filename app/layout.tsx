@@ -3,6 +3,7 @@ import "@mantine/core/styles.css";
 import React from "react";
 import { ColorSchemeScript, MantineProvider } from "@mantine/core";
 import { theme } from "../theme";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata = {
   title: "Leolind",
@@ -22,6 +23,7 @@ export default function RootLayout({ children }: { children: any }) {
       </head>
       <body>
         <MantineProvider defaultColorScheme="dark">{children}</MantineProvider>
+        <Analytics />
       </body>
     </html>
   );

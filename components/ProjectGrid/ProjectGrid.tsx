@@ -15,6 +15,13 @@ export function ProjectGrid() {
       <Center>
         <SimpleGrid cols={isMobile ? 1 : 3} spacing={120} mb={50}>
           <Project
+            title="Good Stretch: Stretching App"
+            imgSrc="/yoga.png"
+            technologies={["React Native", "TypeScript", "EXPO"]}
+            description="Mobile App for creating and doing stretches. Currently working on it!"
+            githubSrc="https://github.com/leolindem/Yoga-app"
+          ></Project>
+          <Project
             title="Bolt: CLI Text Editor"
             imgSrc="/energy.png"
             technologies={["C++"]}
