@@ -1,25 +1,27 @@
 "use client"
 
-import { Anchor, Text, Title, Image, Avatar, Center } from "@mantine/core";
+import { Text, Title, Avatar, Center } from "@mantine/core";
 import classes from "./Welcome.module.css";
 import { useEffect, useState } from "react";
+import { motion, animate } from "motion/react"
 
 export function Welcome() {
   const fullName = "Lindemberg";
   const [typedName, setTypedName] = useState("");
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const speed = 200;
+  const [finished, setFinished] = useState(false);
 
   useEffect(() => {
-    if (currentIndex < fullName.length) {
-      const timeout = setTimeout(() => {
-        setTypedName((prevText) => prevText + fullName[currentIndex]);
-        setCurrentIndex((prevIndex) => prevIndex + 1);
-      }, speed);
-
-      return () => clearTimeout(timeout);
-    }
-  }, [currentIndex, fullName, speed]);
+    const controls = animate(0, fullName.length, {
+      duration: 2,
+      ease: "linear",
+      onUpdate: (latest) => {
+        const count = Math.floor(latest);
+        setTypedName(fullName.slice(0, count));
+        if (count >= fullName.length) setTimeout(() => setFinished(true), 3000);
+      },
+    });
+    return () => controls.stop();
+  }, []);
 
   return (
     <>
@@ -27,20 +29,37 @@ export function Welcome() {
         <Avatar src="/profile_pic.jpg" radius={200} size={200} />
       </Center>
       <Title className={classes.title} ta="center" mt={40}>
-        Leonardo{" "}
+        Leonardo&nbsp;
         <Text
           inherit
           variant="gradient"
           component="span"
           gradient={{ from: "pink", to: "yellow" }}
+          style={{ display: "inline-flex", alignItems: "center" }}
         >
           {typedName}
         </Text>
+        {!finished && (
+          <motion.span
+            aria-hidden="true"
+            style={{
+              display: "inline-block",
+              width: "0.15ch",
+              height: "1em",
+              marginLeft: 6,
+              translateY: "0.1em",
+              backgroundColor: "#fb5607",
+            }}
+            animate={{ opacity: [1, 0, 1] }}
+            transition={{ duration: 0.8, repeat: Infinity, ease: "easeInOut" }}
+          />
+        )}
       </Title>
+
       <Text c="dimmed" ta="center" size="lg" maw={580} mx="auto" mt="xl">
         Born in Brazil and lived in Ecuador, Ghana, Dominican Republic. Studying
-        Computer Science - Engineering at the University of Michigan with a passion
-        in exploring different technologies and building cool things!
+        Computer Science - Engineering at the University of Michigan with a
+        passion in exploring different technologies and building cool things!
       </Text>
     </>
   );
