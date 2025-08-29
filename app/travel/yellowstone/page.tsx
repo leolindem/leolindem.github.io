@@ -167,7 +167,7 @@ export default function Yellowstone() {
             <Center>
               <Image
                 src="/RoadTrip_US/IMG_2107.jpeg"
-                w={400}
+                w={600}
                 alt="Michigan tower"
               />
             </Center>
@@ -175,28 +175,59 @@ export default function Yellowstone() {
           <Grid.Col span={4}>
             <Center>
               <Image
-                src="/RoadTrip_US/IMG_2107.jpeg"
-                w={400}
-                alt="Michigan tower"
+                src="/RoadTrip_US/IMG_2211.jpeg"
+                w={600}
+                alt="Yellowstone Lake"
               />
             </Center>
           </Grid.Col>
           <Grid.Col span={4}>
             <Center>
               <Image
-                src="/RoadTrip_US/IMG_2107.jpeg"
-                w={400}
-                alt="Michigan tower"
+                src="/RoadTrip_US/IMG_2123.jpeg"
+                w={600}
+                alt="Chicago restaurant"
               />
             </Center>
           </Grid.Col>
           <Grid.Col span={4}>
             <Center>
+              <Image src="/RoadTrip_US/IMG_2150.jpeg" w={600} alt="Cheese" />
+            </Center>
+          </Grid.Col>
+          <Grid.Col span={4}>
+            <Center>
               <Image
-                src="/RoadTrip_US/IMG_2107.jpeg"
-                w={400}
-                alt="Michigan tower"
+                src="/RoadTrip_US/IMG_2226.jpeg"
+                w={600}
+                alt="Waterfall Hike"
               />
+            </Center>
+          </Grid.Col>
+
+          <Grid.Col span={4}>
+            <Center>
+              <Image src="/RoadTrip_US/IMG_2197.jpeg" w={600} alt="Waterfall" />
+            </Center>
+          </Grid.Col>
+          <Grid.Col span={4}>
+            <Center>
+              <Image src="/RoadTrip_US/IMG_2162.jpeg" w={600} alt="Badlands" />
+            </Center>
+          </Grid.Col>
+          <Grid.Col span={4}>
+            <Center>
+              <Image src="/RoadTrip_US/IMG_2257.jpeg" w={600} alt="Badlands" />
+            </Center>
+          </Grid.Col>
+          <Grid.Col span={4}>
+            <Center>
+              <Image src="/RoadTrip_US/IMG_2279.jpeg" w={600} alt="Badlands" />
+            </Center>
+          </Grid.Col>
+          <Grid.Col span={4}>
+            <Center>
+              <Image src="/RoadTrip_US/IMG_2275.jpeg" w={600} alt="Badlands" />
             </Center>
           </Grid.Col>
         </Grid>
