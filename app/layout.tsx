@@ -1,32 +1,27 @@
-import "@mantine/core/styles.css";
+import "./globals.css";
 
 import React from "react";
-import { ColorSchemeScript, MantineProvider } from "@mantine/core";
-import { theme } from "../theme";
 import { Analytics } from "@vercel/analytics/next";
-import { Header } from "../components/Header";
+import { serif, sans } from "./fonts";
 
 export const metadata = {
-  title: "Leolind",
-  description: "My personal website",
+  title: "Leonardo Lindemberg",
+  description:
+    "Software Engineer at Google, University of Michigan alum. Building fast, thoughtful software.",
 };
 
-export default function RootLayout({ children }: { children: any }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${serif.variable} ${sans.variable}`}>
       <head>
-        <ColorSchemeScript defaultColorScheme="dark" />
         <link rel="shortcut icon" href="/Logo.jpeg" />
-        <meta
-          name="viewport"
-          content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
-        />
       </head>
       <body>
-        <MantineProvider defaultColorScheme="dark">
-          {/* <Header /> */}
-          {children}
-        </MantineProvider>
+        {children}
         <Analytics />
       </body>
     </html>

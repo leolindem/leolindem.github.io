@@ -1,0 +1,35 @@
+:root {
+  --bg: #faf6ef;
+  --ink: #1f1b16;
+  --ink-soft: #3a352c;
+  --muted: #7a7266;
+  --accent: #b5502a;
+  --line: #e4dccd;
+  --card: #fffdf8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: inherit;
+}
+
+::selection {
+  background: rgba(181, 80, 42, 0.18);
+}

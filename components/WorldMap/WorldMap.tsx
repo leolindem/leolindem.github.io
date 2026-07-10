@@ -1,17 +1,11 @@
-import { Center, SimpleGrid, Title, Badge, Button } from "@mantine/core";
-
 export function WorldMap() {
   return (
-    <>
-      <Title ta="center" mb={0} size={70}>
-        Around the World
-      </Title>
-      <Center>
+    <div style={{ display: "flex", justifyContent: "center" }}>
         <svg
           baseProfile="tiny"
-          fill="#ececec"
+          fill="#efe7d8"
           height="700"
-          stroke="black"
+          stroke="#c7bda6"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth=".2"
@@ -2097,7 +2091,6 @@ export function WorldMap() {
           <circle cx="673.5" cy="724.1" id="1"></circle>
           <circle cx="1798.2" cy="719.3" id="2"></circle>
         </svg>
-      </Center>
-    </>
+    </div>
   );
 }
