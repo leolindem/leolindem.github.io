@@ -28,8 +28,8 @@ const content: Record<
   professional: {
     role: (
       <>
-        Software Engineer at <span className={classes.roleAccent}>Google</span> ·
-        University of Michigan alum
+        Software Engineer at <span className={classes.roleAccent}>Google</span>{" "}
+        · University of Michigan alum
       </>
     ),
     lead: "I build fast, thoughtful software — from command-line tools in C++ to mobile apps and scalable systems. These days I'm an engineer at Google, still shipping things I'd want to use myself.",
@@ -73,28 +73,43 @@ const content: Record<
     role: (
       <>
         Born in Brazil · lived in{" "}
-        <span className={classes.roleAccent}>four countries</span> · always
+        <span className={classes.roleAccent}>five countries</span> · always
         planning the next trip
       </>
     ),
-    lead: "Life's been a bit of a road trip. Brazil, Ecuador, Ghana, the Dominican Republic — each one left a mark. When I'm not writing code you'll find me chasing national parks, new food, and long drives with no fixed plan.",
-    label: "Lately",
+    lead: "Life's been a bit of a road trip. Brazil, Ecuador, Ghana, the Dominican Republic, and now California. ",
+    label: "Couple of the things I like",
     items: [
       {
-        title: "Grew up across four countries",
-        desc: "Brazil, Ecuador, Ghana & the Dominican Republic",
+        title: "Traveling and discovering places",
+        desc: "Check out where I've been",
         meta: "🌍",
         href: "/travel",
       },
       {
-        title: "Chess, casually",
-        desc: "Built my own engine to understand what I keep losing to",
+        title: "Running, Biking, Swimming",
+        desc: "First Half Loading... 90%",
         meta: "Hobby",
       },
       {
-        title: "Always a soundtrack",
-        desc: "Music that shifts with wherever I happen to land",
-        meta: "Music",
+        title: "Listening to music",
+        desc: "Soundracks that I've been playing recently",
+        meta: "Hobby",
+      },
+      {
+        title: "Movies and TV shows",
+        desc: "Catch me on Letterboxd",
+        meta: "Entertainment",
+      },
+      {
+        title: "Games",
+        desc: "Of course",
+        meta: "Entertainment",
+      },
+      {
+        title: "Foods",
+        desc: "Check me out on Beli",
+        meta: "Food",
       },
     ],
     footerNote: {
